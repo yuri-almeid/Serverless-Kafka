@@ -12,9 +12,9 @@ provider:
   stage: ${opt:stage, 'dev'}
   
 functions:
-  hello:
-    handler: src/handlers/hello.handler
+  getAccess:
+    handler: src/handlers/getAccess.handler
     events:
       - http:
           method: GET
-          path: /hello
+          path: /getAccess
